@@ -1,0 +1,32 @@
+version: "3"
+services:
+  server-auth:
+    depends_on:
+      - db
+    build:
+      context: .
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASS=root
+      - DB_DATABASE=db_auth
+      - SERVER_PORT=3000
+      - SECRET_TOKEN=AmWSfjOew1kHDAT
+    ports:
+      - "3000:3000"
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: db_auth
+  adminer:
+    image: adminer
+    ports:
+      - 8087:8080
+volumes:
+  postgresql:
+  postgresql_data:
