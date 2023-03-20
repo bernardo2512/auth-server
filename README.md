@@ -2,6 +2,8 @@
 
 Para utilizar o projeto de forma padrão, é necessario que tenha o docker e docker compose em sua maquina.
 
+Ou se preferir pode implementar o fluxo de verificação em sua aplicação redirecionando os tokens para essa api validar.
+
 Para subir o projeto e testa-lo, é necessário dar 2 passos sendo eles:
 
 ## 1 - Subir a aplicação
