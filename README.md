@@ -1,6 +1,8 @@
 # Introdução
 
-Para utilizar o projeto de forma padrão, é necessario que tenha o docker e docker compose em sua maquina.
+Para utilizar o projeto de forma padrão, é necessario que tenha o Docker e Docker Compose em sua maquina.
+
+Segue link da doc: https://docs.docker.com/desktop/install/linux-install/
 
 Ou se preferir pode implementar o fluxo de verificação em sua aplicação redirecionando os tokens para essa api validar.
 
